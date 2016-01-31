@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>台灣 2016大選 各地區政黨票分布比例地圖</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>2016大選 各地區政黨票分布</h1>
+      <div id="detail" class="col-md-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            定位
+            <div class="btn-group">
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 25.053699, lng: 121.507837});
+                                        return false">台北</a>
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 25.0162758, lng: 121.4599023});
+                                        return false">新北</a>
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 24.804498, lng: 120.988528});
+                                        return false">桃園</a>
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 24.167804, lng: 120.658214});
+                                        return false">台中</a>
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 22.996169, lng: 120.201330});
+                                        return false">台南</a>
+              <a href="#" class="btn btn-default" onclick="map.setCenter({lat: 22.643894, lng: 120.317828});
+                                        return false">高雄</a>
+          </div>
+          <hr>
+          <h2 id="content" class="info">在地圖上滑動或點選以顯示數據</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div id="map"></div>
+      </div>
+      <div id="chart" class="col-xs-6"></div>
+    </div>
+    <div id="listNoneCunli"></div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js?v=3"></script>
+  <script src="//code.highcharts.com/stock/highstock.js"></script>
+  <script src="//code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="lib/topojson.js"></script>
+  <script src="lib/colorbar.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
